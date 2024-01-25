@@ -16,11 +16,7 @@ let wickets = 0;
 let timeLeft = 15;
 let timerId;
 let highScores = [];
-let achievements = []; // Array to store earned achievements
 let highestScore = 0;
-let totalScore = 0;
-let totalWickets = 0;
-let totalGames = 0;
 
 
 // Event listener for  buttons click
@@ -169,23 +165,6 @@ function displayLeaderboard() {
 startTimer();
 displayLeaderboard();
 
-
-
-// function for email chceking
-
-function checkEmail() {
-    var email = document.getElementById('email').value;
-    var result = document.getElementById('result');
-  
-    // Regular expression pattern to check email format
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
-    if (emailPattern.test(email)) {
-      result.textContent = 'Email is valid.';
-    } else {
-      result.textContent = 'Email is not valid.';
-    }
-}
   
 // function for live date time
 
@@ -242,31 +221,6 @@ function showScoreAnimation(playerGuess) {
     }, 1000);
   }
   
- // Function to check and award achievements
-
- function checkAchievements() {
-    // Example achievement: "High Scorer"
-
-    if (score >= highestScore) {
-      // Check if the player hasn't already earned the achievement
-      if (!achievements.includes("High Scorer")) {
-        achievements.push("High Scorer");
-        displayAchievement("High Scorer");
-      }
-    }
-   // Add more achievement checks and awards based on your game's criteria
-}
-
-  
-
-// Function to display earned achievements
-
-function displayAchievement(achievement) {
-    const achievementsList = document.getElementById('achievements-list');
-    const achievementItem = document.createElement('li');
-    achievementItem.textContent = achievement;
-    achievementsList.appendChild(achievementItem);
-}
 
 // Function to update the highest score
 
@@ -274,22 +228,4 @@ function updateHighestScore() {
     if (score > highestScore) {
       highestScore = score;
     }
-}
-
-// Function to calculate and display game statistics
-
-
-
-function calculateStatistics() {
-  const averageScore = totalScore / totalGames;
-  const wicketsPerGame = totalWickets / totalGames;
-
-
-  // Get the elements to display the statistics
-  const averageScoreElement = document.getElementById('average-score');
-  const wicketsPerGameElement = document.getElementById('wickets-per-game');
-
-  // Update the elements with the calculated statistics
-  averageScoreElement.textContent = `Average Score: ${averageScore}`;
-  wicketsPerGameElement.textContent = `Wickets per Game: ${wicketsPerGame}`;
 }

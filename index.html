@@ -1,0 +1,135 @@
+
+<html>
+<head>
+    <title>Cricket Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<main>
+    <header>
+
+      <div class="logo">
+        <img src="./images/default.png" alt="OCG">
+        <h1 class="game-name">Online Cricket Guess</h1>
+      </div>
+
+        <nav class="menu-bar">
+
+            <ul>
+            <li id="datetime"><a href=""></a></li>
+            <li><a href="#section-rules">Game Rules</a></li>
+            <li><a href="#section-about">About</a></li>
+            <li><a href="#section-gameplay">Play Game</a></li>
+            <li><a href="#section-leaderboard">High Scores</a></li>
+            <li><a href="https://github.com/Ehtesham-Ul-Haq">Github Profile</a></li>
+          </ul>
+        </nav>
+      </header>
+        
+
+    
+
+    <section id="section-gameplay">
+    
+        <div class="bg-img"></div>   
+
+            <div id="game" class="bg-text">
+                <h2>Play OCG</h2>
+                <h5>ONLINE CRICKET GUESS</h5> 
+
+                <p id="score">SCORE :  <span id="score-value">0</span></p>
+                <p id="wickets">WICKET  :  <span id="wickets-value">0</span></p>
+        
+                <button id="guess-button">GUESS</button>        
+        
+                <audio id="cheer-sound" src="./sounds/cheer.mp3"></audio>
+                <audio id="howzat-sound" src="./sounds/Howzat.mp3"></audio>
+
+                <div id="result"></div>
+
+                <div class="score-animation"></div>
+                <div class="wicket-animation"></div>
+
+
+                <div id="timer">TIME :  <span id="timer-value">15</span> seconds</div>
+        
+                <button id="reset-button">RESET GAME</button>               
+                                  
+            </div>
+            
+            
+    </section>
+
+    <section id="section-leaderboard">
+
+        <h2>Leaderboard</h2>
+        <h5>Top Highest Scores Are</h5>
+    
+        <div id="leaderboard"></div> 
+    </section>
+
+    <section id="section-about">
+        <h2>About Online Cricket Guess - OCG</h2>
+            <div class="about-item">
+                <div class="content">
+                    <h5>Online Cricket Guess (OCG) Game</h5>
+                    <p>
+                      Welcome to Online Cricket Guess, the thrilling and fast-paced online cricket guessing game! Test your cricket instincts in this unique challenge where you have 15 seconds to guess a cricket hold digit number. Score runs by inputting digits that don't match the AI's number, but beware – if you guess right, it's a wicket loss!
+                    <h6>🏏 Key Features</h6>
+                    <ul>
+                      <li class="list-item">Quick and exciting gameplay with a 15-second timer.</li>
+                      <li class="list-item">Guess the cricket hold digit number to score runs.</li>
+                      <li class="list-item">Matching the AI's digit counts as a wicket loss.</li>
+                      <li class="list-item">Keep track of your runs and wickets to challenge your friends.</li>
+                    </ul>
+                      Experience the adrenaline of OCG! Guess cricket hold digits in 15 seconds. Score runs for mismatches; matching AI's digit is a wicket. Fast, fun, and competitive. Play now! 
+                      Guess cricket digits in 15 sec! Score for mismatches, lose wickets for matches. Fast, fun, competitive.
+                      <h6>Interested in improving the game? Give us Recommendations</h6>
+                    </p>                
+                </div>
+            </div>     
+    </section>
+
+    <section id="section-rules">
+      <h2>Game Rules</h2>
+      <div class="rules">
+       <ul>
+        <li class="list-item">Input a digit within the time limit to score runs.</li>
+        <li class="list-item">If your digit matches the AI's, it's a wicket loss.</li>
+        <li class="list-item">Aim for the highest score in 15 seconds!</li>
+       </ul>
+      </div>
+      
+    </section>
+      
+      <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="./images/profile.png" alt="Game Logo">
+              <h3>Online Cricket Guess</h3>
+            </div>
+            <div class="footer-links">
+              <ul>
+                <li><a href="#section-gameplay">Play Game</a></li>
+                <li><a href="#section-about">About</a></li>
+                <li><a href="#section-rules">Game Rules</a></li>
+                <li><a href="https://github.com/Ehtesham-Ul-Haq">Github Profile</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>&copy; 2024 Online Cricket Guess. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+
+</main>    
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
+
